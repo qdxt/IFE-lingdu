@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>三栏式布局方法(table-cell)</title>
+	 <style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+			border:none;
+			text-align: center;
+			color: #fff;
+		}
+		.wrap{
+			width: 980px;
+			border:1px solid #ccc;
+			background: #333;
+			margin: auto;
+			position: relative;
+			left:0px;
+			top:0px;
+			overflow: hidden;
+
+		}
+		.left{
+			background:#abcdef;
+			display:table-cell;
+			padding:10px;
+		}
+		.right{
+
+			background:#f00;
+			display:table-cell;
+			padding:20px;
+
+		}
+		.middle{
+			background:green;
+			display:table-cell;
+			padding:10px;
+			width: 80%;
+		}
+	 </style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="left">我是左边的内容</div>
+		<div class="middle">我是中间的内容，我门要排到一起 </div>
+		<div class="right">我是右边的内容</div>
+	</div>
+</body>
+</html>
