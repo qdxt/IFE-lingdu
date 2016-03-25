@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>三栏式布局方法2</title>
+	 <style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+			border:none;
+			text-align: center;
+			color: #fff;
+		}
+		.wrap{
+			width: 980px;
+			border:1px solid #ccc;
+			background: #333;
+			margin: auto;
+			position: relative;
+			left:0px;
+			top:0px;
+			overflow: hidden;
+
+		}
+		.left{
+			width:140px;
+			background:#abcdef;
+			position: absolute;
+			left: 0px;
+			top:0px;
+			padding:10px;
+		}
+		.right{
+			width:160px;
+			background:#f00;
+			position: absolute;
+			right:0px;
+			top:0px;
+			padding:10px;
+
+		}
+		.middle{
+			background:green;
+			margin-right: 160px;
+			margin-left: 140px;
+						padding:10px;
+		}
+	 </style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="left">我是左边的内容</div>
+		<div class="middle">我是中间的内容，我门要排到一起 </div>
+		<div class="right">我是右边的内容</div>
+		
+		
+	</div>
+</body>
+</html>
