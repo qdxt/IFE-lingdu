@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>定位和居中问题(纯定位无宽度)</title>
+	<style type="text/css">
+		*{
+			margin:0px;
+			padding:0px;
+			border:none;
+		}
+		.middle{
+			position: absolute;
+			background: #abcdef;
+			left: 25%;
+			top:25%;
+			right:25%;
+			bottom:25%;
+		}
+		.round{
+			width: 60px;
+			height: 60px;
+			background:#ff0;
+			position: absolute;
+		}
+		.left-round{
+			border-radius: 0 0  100% 0;
+			left:0px;
+			top:0px;
+		}
+		.right-round{
+			border-radius: 100% 0  0 0;
+			right:0px;
+			bottom:0px;
+		}
+	</style>
+</head>
+<body>
+		<div class="middle">
+			<div class="round left-round"></div>
+			<div class="round right-round"></div>
+		</div>
+</body>
+</html>
