@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>任务十二</title>
+	<style type="text/css">
+		thead{background: #000; color: #fff;}
+		tbody tr{background:#fff;}
+		tbody tr:nth-child(even){
+			color: #333;
+			background:#999;
+		}
+		tbody tr:nth-child(1){
+			color: #f00;
+		}
+		tbody tr:nth-child(2){
+			color: #f00;
+		}
+		tbody tr:nth-child(3){
+			color: #f00;
+		}
+		input{width: 200px; padding: 10px; margin:20px;}
+		input:focus{
+			width: 400px; 
+			animation:widthMove 2s;
+		}
+		@keyframes widthMove
+		{
+		0%   {width:200px; }
+		100% {width:400px;}
+		}
+		.wrap{width:300px;  position: relative; height:100px; display:block; margin:0px; padding:0px;}
+		.slider{width:300px; height:100px; overflow: hidden; margin:0px; padding:0px;}
+		.slider li{float: left;  height:100px; list-style: none; width: 300px; height:100px;}
+		#item1{background:green; position: relative; z-index:1;}
+		#item2{background:#ff0; position: relative; z-index:2;}
+		#item3{background:#f00; position: relative; z-index:3;}
+		.contral a{display: inline-block;width:30px; height:30px; background:#abcdef; color:#fff; line-height: 40px; text-align: center; color:#fff; z-index: 4; position: relative; text-decoration: none;}
+		.contral{position: absolute; bottom:0px; right:0px;}
+		.clearfix:after{display:block;clear:both;content:"";visibility:hidden;height:0} 
+.clearfix{zoom:1} 
+	</style>
+</head>
+<body>
+	<table>
+			<thead>
+				<tr>
+			   <td>排名</td>
+		     <td>网站</td>
+		     <td>热度</td>
+		  </tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>百度前端学院</td>
+					<td>13000</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>百度前端学院</td>
+					<td>12000</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>百度前端学院</td>
+					<td>11000</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>百度前端学院</td>
+					<td>10000</td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>百度前端学院</td>
+					<td>9000</td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td>百度前端学院</td>
+					<td>8000</td>
+				</tr>
+			</tbody>
+	</table>
+	<input type="text" placeholder="请点击试一下，会有效果哦">
+	<selection class="wrap clearfix">
+		<ul class="slider clearfix">
+			<li id ="item1">第一个li</li>
+			<li id ="item2">第二个li</li>
+			<li id ="item3">第三个li</li>
+		</ul>
+		<selection class="contral">
+			<a href="#item1">1</a>
+			<a href="#item2">2</a>
+			<a href="#item3">3</a>
+		</selection>
+	</selection>
+	
+</body>
+</html>
